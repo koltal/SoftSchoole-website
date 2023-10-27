@@ -140,6 +140,7 @@ module.exports = {
       },
       borderWidth: {
         1: '1px',
+        5: '5px'
       },
       borderColor: {
         'primary': '#38C6BC',

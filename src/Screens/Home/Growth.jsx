@@ -1,6 +1,11 @@
 
 import Container from "../../Component/Container"
-import icon1 from '../../Assets/Home/growth-icon.png'
+import icon1 from '../../Assets/Home/growth-1.png'
+import icon2 from '../../Assets/Home/growth-2.png'
+import icon3 from '../../Assets/Home/growth-3.png'
+import { LighterText, NormalHeading } from "../../Component/Text"
+
+
 
 const Growth = () => {
   return (
@@ -10,7 +15,7 @@ const Growth = () => {
 
             <p className="text-[16px] w-[65%] text-gray-600 text-center">With the presence of our various tools to manage multiple  employees, efficiency and growth is assure using NitroServe </p>
 
-            <div className="flex gap-10 mt-10">
+            <div className="flex w-full gap-16 mt-10">
                 <Card 
                     title={'Multiple tools'}
                     text='NitroServe offers a comprehensive suite of tools designed to simplify your tasks and boost your productivity.'
@@ -19,12 +24,14 @@ const Growth = () => {
                 <Card 
                     title={'User friendly'}
                     text='Our intuitive interface ensures effortless navigation for quick access to the right tool.'
+                    icon={icon2}
                 />
 
 
                 <Card 
                     title={'Support'}
                     text='Providing support is crucial and it is made possible to ensure seamless experiences.'
+                    icon={icon3}
                 />
             </div>
         </div>
@@ -38,10 +45,10 @@ export default Growth
 const Card = ({title, text, icon=icon1}) => {
 
     return (
-        <div className="bg-white flex flex-col gap-3 pt-10 px-8 rounded items-center w-[325px] h-[346px]">
+        <div className="bg-white flex flex-col gap-3 pt-10 px-8 rounded items-center w-[40%] h-[346px]">
             <img className="w-[84px] h-[84px] mb-3" src={icon} alt="" />
-            <p className="text-[20px] font-semibold">{title}</p>
-            <p className="text-[14px] text-center text-gray-500">{text}</p>
+            <NormalHeading text={title} className='!text-[20px] !font-semibold !text-[#222222]'/>
+            <LighterText text={text} className='text-center'/>
         </div>
     )
 }
