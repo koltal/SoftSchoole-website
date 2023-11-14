@@ -1,5 +1,6 @@
 
 import Header from "./Header/Header"
+import Footer from "./Footer/Footer"
 
 const Layout = ({children, className=''}) => {
   return (
@@ -9,7 +10,7 @@ const Layout = ({children, className=''}) => {
 
           {children}
 
-        <div>Footer</div>
+        <Footer/>
     </div>
   )
 }

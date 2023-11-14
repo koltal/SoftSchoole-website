@@ -3,7 +3,7 @@ import {BsArrowUpRight} from 'react-icons/bs'
 const Button = ({text, type='fill', className='', Icon=BsArrowUpRight, withIcon=false}) => {
   return (
 
-    <div>
+    <>
         {type === 'fill' ? 
             <button 
                 className={`w-[78px] h-[38px] flex justify-center gap-2 items-center bg-primary font-bold text-white rounded-md hover:opacity-50 ${className}`}>
@@ -17,7 +17,7 @@ const Button = ({text, type='fill', className='', Icon=BsArrowUpRight, withIcon=
             </button>
         }
 
-    </div>
+    </>
   )
 }
 

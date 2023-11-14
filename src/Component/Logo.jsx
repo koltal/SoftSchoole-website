@@ -2,11 +2,14 @@ import logo from '../Assets/nitroServeLogo.png'
 
 const Logo = ({className}) => {
   return (
-    <img 
-        className={`${className}`}
-        src={logo} 
-        alt="logo" 
-    />
+    <div  className={`${className}`}>
+      <img 
+         
+          src={logo} 
+          alt="logo" 
+      />
+
+    </div>
   )
 }
 
