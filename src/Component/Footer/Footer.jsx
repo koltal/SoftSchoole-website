@@ -16,7 +16,7 @@ const Footer = () => {
 
             <div className="bg-[#38C6BC] h-[354px] rounded-lg flex justify-between relative" >
 
-                <div className="w-[30%] flex items-end">
+                <div className="flex items-end">
                     <img src={footerPic1} alt="" />
 
                 </div>
@@ -35,7 +35,7 @@ const Footer = () => {
 
                 </div>
 
-                <div className="w-[30%]">
+                <div className="">
                     <img src={footerPic2} alt="" />
 
                 </div>
