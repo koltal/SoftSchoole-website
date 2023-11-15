@@ -8,8 +8,8 @@ import { NormalHeading, LighterText } from "../../Component/Text"
 const Functions = () => {
   return (
     <div>
-        <Row>
-            <img src={func1} alt="" />
+        <Row className={'sm:flex-col-reverse sm:gap-10'}>
+            <img className="sm:px-4" src={func1} alt="" />
 
             <Temp 
                 title={'Multiple integrations for seamless function'}
@@ -18,14 +18,14 @@ const Functions = () => {
 
         </Row>
 
-        <Row>
+        <Row className={'sm:flex-col sm:gap-10'}>
 
             <Temp 
                 className={'items-end'}
                 title={'Supports functions on multiple device types'}
                 text={'Nitroserve can be accessed on desktop which allows some features and also on the mobile app'}
             />
-            <img src={func2} alt="" />
+            <img className="sm:px-4" src={func2} alt="" />
 
         </Row>
     </div>
@@ -36,14 +36,14 @@ export default Functions
 
 const Temp = ({className, title, text}) => {
     return (
-        <div className={`w-[50%] flex flex-col justify-center px-16 gap-4 ${className}`}>
+        <div className={`w-[50%] sm:w-full flex flex-col justify-center px-16 sm:px-4 gap-4 ${className}`}>
 
             <NormalHeading 
-                className={'leading-7 w-[80%]'}
+                className={'leading-7 w-[80%] sm:w-full'}
                 text={title}
             />
             <LighterText 
-                className={'w-[80%]'}
+                className={'w-[80%] sm:w-full'}
                 text={text}
             />
 

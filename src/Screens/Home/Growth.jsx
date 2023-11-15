@@ -11,11 +11,11 @@ const Growth = () => {
   return (
     <Container className="bg-[#F7FBFF] !py-14">
         <div className="flex flex-col gap-4 items-center">
-            <p className="text-[24px] font-semibold">Built for promoting growth</p>
+            <NormalHeading text={'Built for promoting growth'}/>
 
-            <p className="text-[16px] w-[65%] text-gray-600 text-center">With the presence of our various tools to manage multiple  employees, efficiency and growth is assure using NitroServe </p>
+            <p className="text-[16px] sm:text-[14px] w-[65%] sm:w-full text-gray-600 text-center">With the presence of our various tools to manage multiple  employees, efficiency and growth is assure using NitroServe </p>
 
-            <div className="flex w-full gap-16 mt-10">
+            <div className="flex sm:flex-col w-full gap-16 sm:gap-12 mt-10 sm:mt-8">
                 <Card 
                     title={'Multiple tools'}
                     text='NitroServe offers a comprehensive suite of tools designed to simplify your tasks and boost your productivity.'
@@ -45,9 +45,9 @@ export default Growth
 const Card = ({title, text, icon=icon1}) => {
 
     return (
-        <div className="bg-white flex flex-col gap-3 pt-10 px-8 rounded items-center w-[40%] h-[346px]">
-            <img className="w-[84px] h-[84px] mb-3" src={icon} alt="" />
-            <NormalHeading text={title} className='!text-[20px] !font-semibold !text-[#222222]'/>
+        <div className="bg-white flex flex-col gap-3 pt-10 px-8 sm:px-6 rounded items-center sm:self-center w-[40%] sm:w-[80%] h-[346px] sm:h-[270px]">
+            <img className="w-[84px] sm:w-[56px] h-[84px] sm:h-[56px] mb-3" src={icon} alt="" />
+            <NormalHeading text={title} className='!text-[20px] sm:!text-[16px] !font-semibold !text-[#222222]'/>
             <LighterText text={text} className='text-center'/>
         </div>
     )

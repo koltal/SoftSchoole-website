@@ -88,6 +88,8 @@ module.exports = {
         'shift-shadow': '10px 10px 40px rgba(0, 0, 0, 0.08);',
         'shift-shadow-small': '0px 0px 10px 2px rgba(0, 0, 0, 0.04);',
         'live-shadow': '0px 0px 20px 4px rgba(0, 0, 0, 0.06)',
+        '0': '0px',
+
 
       },
       backgroundColor: {

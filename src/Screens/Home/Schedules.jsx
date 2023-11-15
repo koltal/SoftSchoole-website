@@ -7,13 +7,15 @@ import tickIcon from '../../Assets/Home/tick.png'
 import Row from "../../Component/Row"
  
 
+const rowSyle = 'sm:flex-col-reverse'
+
 const Schedules = () => {
   return (
-    <Container className="bg-[#FDFFFF] !py-28">
-        <div className="flex flex-col gap-36">
+    <Container className="bg-[#FDFFFF] !py-28 sm:!py-20">
+        <div className="flex flex-col gap-36 sm:gap-20">
 
-            <Row>
-                <img src={sch1} alt="" className="w-[45%]"/>
+            <Row className={rowSyle}>
+                <img src={sch1} alt="" className="w-[45%] sm:w-full sm:mt-16"/>
 
                 <Temp
                     title={'Scheduler'}
@@ -24,7 +26,7 @@ const Schedules = () => {
                 />
             </Row>
 
-            <Row>
+            <Row className={'sm:flex-col'}>
 
                 <Temp
                     title={'Task system'}
@@ -34,12 +36,12 @@ const Schedules = () => {
                     tickText2={'Mange tasks for different teams easily '}
                 />
 
-                <img src={sch2} alt="" className="w-[45%] h-[450px]"/>
+                <img src={sch2} alt="" className="w-[45%] h-[450px] sm:h-[340px] sm:w-full sm:mt-16"/>
 
             </Row>
 
-            <Row>
-                <img src={sch3} alt="" className="w-[45%] h-[450px]"/>
+            <Row className={rowSyle}>
+                <img src={sch3} alt="" className="w-[45%] h-[450px] sm:h-[340px] sm:w-full sm:mt-16"/>
 
                 <Temp
                     title={'Reports'}
@@ -63,7 +65,7 @@ export default Schedules
 const Temp = ({title, mainText, subText, tickText1, tickText2}) => {
     return (
 
-        <div className="w-[45%] mt-10 flex flex-col gap-4">
+        <div className="w-[45%] sm:w-full mt-10 sm:mt-0 flex flex-col gap-4">
 
             <div>
 
@@ -75,23 +77,23 @@ const Temp = ({title, mainText, subText, tickText1, tickText2}) => {
 
 
             <NormalHeading 
-                className='w-[453px] leading-7'
+                className='w-[453px] sm:w-[80%] sm:leading-6 leading-7'
                 text={mainText}
             />
 
             <LighterText 
-                className='w-[453px]'
+                className='w-[453px] sm:w-[95%]'
                 text={subText}
             />
 
             <div className="flex flex-col mt-7">
                 <div className="border-y-[2px] border-[#C0CCCB] py-3 flex gap-3 items-center">
-                    <img className="px-[6px] py-[6px] rounded-full bg-[#15878C]" src={tickIcon} alt="" />
+                    <img className="px-[6px] sm:px-[4px] py-[6px] sm:py-[4px] rounded-full bg-[#15878C]" src={tickIcon} alt="" />
                     <LighterText text={tickText1}/>
                 </div>
 
                 <div className="border-b-[2px] border-[#C0CCCB] py-3 flex gap-3 items-center">
-                    <img className="px-[6px] py-[6px] rounded-full bg-[#15878C]" src={tickIcon} alt="" />
+                    <img className="px-[6px] sm:px-[4px] py-[6px] sm:py-[4px] rounded-full bg-[#15878C]" src={tickIcon} alt="" />
                     <LighterText text={tickText2}/>
                 </div>
 

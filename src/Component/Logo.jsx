@@ -4,7 +4,6 @@ const Logo = ({className}) => {
   return (
     <div  className={`${className}`}>
       <img 
-         
           src={logo} 
           alt="logo" 
       />
