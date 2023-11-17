@@ -4,8 +4,11 @@ import Nav from "../Nav/Nav"
 import Button from "../Forms/Button"
 import { TbMenu2 } from "react-icons/tb";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+
+  const navigate = useNavigate()
   return (
 
     <div className="bg-white">
@@ -18,8 +21,16 @@ const Header = () => {
             <Nav/>
 
             <div className="flex gap-3 sm:hidden">
-                <Button text='Log in'/>
-                <Button text='Sign up' type="outline"/>
+              <Link to={'https://app.nitroserve.co'}>
+                <Button text='Log in'
+                />
+              </Link>
+
+              <Link to={'https://app.nitroserve.co/signup'}>
+                <Button text='Sign up' type="outline"
+                />
+
+              </Link>
             </div>
 
             <TbMenu2 className="hidden sm:block" size={28}/>

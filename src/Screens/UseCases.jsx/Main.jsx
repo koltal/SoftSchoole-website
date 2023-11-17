@@ -1,22 +1,21 @@
-import Container from "../../../Component/Container"
-import medPic from '../../../Assets/Usecase/usecase-med.png'
-import { BigHeading, NormalText } from "../../../Component/Text"
-import Button from "../../../Component/Forms/Button"
+import Container from "../../Component/Container"
+import { BigHeading, NormalText } from "../../Component/Text"
+import Button from "../../Component/Forms/Button"
 
-const Main = () => {
+const Main = ({mainPic,title, text}) => {
   return (
-    <Container>
+    <Container className="!pb-24">
         <div>
             <div className="w-full relative">
-                <img src={medPic} alt="" />
+                <img src={mainPic} alt="" />
 
                 <div className="absolute top-0 w-full h-full flex flex-col justify-center items-center gap-6">
 
-                    <BigHeading className={'text-white'} text={'Medical Institutions'}/>
+                    <BigHeading className={'text-white'} text={title}/>
 
                     <NormalText
                         className={'!text-[18px] text-[#F9F9F9] w-[40%] text-center'}
-                        text={'With NitroServe’s shift scheduling and management system, it is easy and flexible to manage the schedules of medical practitioners'}/>
+                        text={text}/>
 
                     <Button 
                         withIcon={true}

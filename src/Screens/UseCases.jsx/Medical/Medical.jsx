@@ -1,15 +1,15 @@
 import Layout from '../../../Component/Layout'
-import Main from './Main'
-import Do from './Do'
-import Efficiency from './Efficiency'
+import MainMedical from './MainMedical'
+import DoMedical from './DoMedical'
+import EfficiencyMedical from './EfficiencyMedical'
 
 const Medical = () => {
   return (
     <Layout>
         <div>
-            <Main />
-            <Do />
-            <Efficiency />
+            <MainMedical />
+            <DoMedical />
+            <EfficiencyMedical />
         </div>
     </Layout>
   )

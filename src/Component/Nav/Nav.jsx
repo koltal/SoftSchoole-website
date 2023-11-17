@@ -10,7 +10,8 @@ const Nav = () => {
 
         <NavList
           list={[
-            {name: 'Medical Institutions', link:'/usecase/medical'}
+            {name: 'Medical Institutions', link:'/usecase/medical'},
+            {name: 'Constructions', link:'/usecase/construction'}
           ]}
         >
           <NavItem 

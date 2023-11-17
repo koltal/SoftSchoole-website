@@ -11,7 +11,7 @@ const Main = () => {
 
       <div className=" flex justify-between sm:flex-col">
 
-        <div className="w-[50%] sm:w-full">
+        <div className="w-[50%] sm:w-full self-center">
 
             <div className=" flex flex-col gap-4 w-[75%] sm:w-full">
                 <p className="text-[36px] sm:text-[18px] font-semibold sm:font-bold text-black-500 leading-[45.18px] sm:leading-6">
@@ -29,7 +29,7 @@ const Main = () => {
             </div>
         </div>
 
-        <div className="sm:flex gap-5 my-6 hidden text-[26px] sm:text-[20px] text-gray-300">
+        <div className="sm:flex gap-5 my-6 hidden text-[26px] sm:text-[20px] text-gray-500">
           <p className="font-semibold">Google</p>
           <p className="font-semibold">Uber</p>
           <p className=" font-semibold">adidas</p>
@@ -45,9 +45,9 @@ const Main = () => {
       </div>
 
       <div className="flex gap-5 mt-12 sm:hidden">
-        <p className="text-[26px] text-gray-300">Google</p>
-        <p className="text-[26px] text-gray-300">Uber</p>
-        <p className="text-[26px] text-gray-300 font-semibold">adidas</p>
+        <p className="text-[26px] text-gray-500">Google</p>
+        <p className="text-[26px] text-gray-500">Uber</p>
+        <p className="text-[26px] text-gray-500 font-semibold">adidas</p>
       </div>
 
     </Container>
