@@ -4,7 +4,7 @@ import Main from "./Main"
 import Growth from "./Growth"
 import Schedules from "./Schedules"
 import Functions from "./Functions"
-import Questions from "./Questions"
+import Questions from "../../Component/Questions"
 
 const Home = () => {
   return (

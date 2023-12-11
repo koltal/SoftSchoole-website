@@ -6,7 +6,21 @@ import { useState } from "react";
 const Nav = () => {
   return (
     <div className="flex justify-between w-[33%] sm:hidden">
-        <NavItem text='Features'/>
+
+        <NavList
+          list={[
+            {name: 'Scheduling', link:'/features/scheduling'},
+            {name: 'Messaging', link:'/features/messaging'},
+            {name: 'Task Messaging', link:'/features/management'},
+
+          ]}
+        >
+          <NavItem 
+            list
+            text='Features'
+            active={'/features'}
+          />
+        </NavList>
 
         <NavList
           list={[

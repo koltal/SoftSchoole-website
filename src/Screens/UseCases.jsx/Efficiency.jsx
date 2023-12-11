@@ -63,7 +63,7 @@ const SubHead = ({cardList, title, text, handleClick}) => {
 
       </div>
     
-  </div>
+    </div>
   )
 }
 

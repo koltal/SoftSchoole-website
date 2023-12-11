@@ -1,6 +1,6 @@
-import Row from "../../Component/Row"
-import { LighterText, NormalHeading, BigHeading } from "../../Component/Text"
-import Container from "../../Component/Container"
+import Row from "./Row"
+import { LighterText, BigHeading } from "./Text"
+import Container from "./Container"
 import { IoAddOutline } from "react-icons/io5";
 
 const Questions = () => {

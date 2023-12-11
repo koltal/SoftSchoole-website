@@ -10,7 +10,7 @@ module.exports = {
       custom: '10px 10px 40px rgba(0, 0, 0, 0.08)'
     },
     screens: {
-      '2xl': {'max': '1535px'},
+      '2xl': {'min': '1535px'},
       // => @media (max-width: 1535px) { ... }
 
       'xl': {'max': '1279px'},

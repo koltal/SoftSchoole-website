@@ -1,6 +1,5 @@
 import do2 from '../../../Assets/Usecase/usecaseDo2.png'
 import do5 from '../../../Assets/Usecase/usecaseDo5.png'
-import do3 from '../../../Assets/Usecase/usecaseDo3.png'
 
 import Do from "../Do"
 
