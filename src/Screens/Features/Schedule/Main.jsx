@@ -10,9 +10,9 @@ const Main = () => {
     <Container className="bg-[#FBFBFB] sm:bg-white !pb-16 h-[500px]">
         
 
-      <div className=" flex relative">
+      <div className=" flex h-full">
 
-        <div className="w-[65%] sm:w-full flex flex-col gap-3 2xl:justify-center">
+        <div className="w-[65%] 2xl:w-[50%] sm:w-full flex flex-col gap-3 2xl:justify-center">
 
             <p className={`font-bold text-[12px] text-[#5175F3]`}>SCHEDULING</p>
 
@@ -36,7 +36,7 @@ const Main = () => {
         </div>
 
 
-        <div className="w-[50%] absolute right-12 h-[346px] mt-6">
+        <div className="w-[50%] absolute right-12 h-[346px] mt-3">
           <img className="" src={mainPic} alt="" />
 
         </div>
