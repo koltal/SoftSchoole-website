@@ -1,18 +1,17 @@
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
+import { cn } from "../lib/utils";
 
-import Header from "./Header/Header"
-import Footer from "./Footer/Footer"
-
-const Layout = ({children, className=''}) => {
+const Layout = ({ children, className = "", withoutFooter = false }) => {
   return (
-    <div className={`flex flex-col ${className}`}>
-        <Header/>
-        
+    <div className={cn("flex flex-col", className)}>
+      <Header />
 
-          {children}
+      <div className="mt-20 sm:mt-10">{children}</div>
 
-        <Footer/>
+      <Footer withoutFooter={withoutFooter} />
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
