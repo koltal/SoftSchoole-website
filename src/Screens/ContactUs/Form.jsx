@@ -5,7 +5,7 @@ import Button from "../../Component/Forms/Button";
 
 const Form = () => {
   return (
-    <div className="bg-white h-[437px] shadow-shift-shadow w-[454px] rounded-md px-6 py-5 flex flex-col gap-4">
+    <div className="bg-white h-[437px] shadow-shift-shadow sm:shadow-shift-shadow-small w-[454px] sm:w-[90vw] rounded-md px-6 py-5 flex flex-col gap-4">
       <Row className={"gap-4"}>
         <Input placeholder="Enter name" label labelName="Enter name" />
         <Input placeholder="Enter name" label labelName="Last name" />

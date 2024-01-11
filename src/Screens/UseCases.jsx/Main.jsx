@@ -1,34 +1,34 @@
-import Container from "../../Component/Container"
-import { BigHeading, NormalText } from "../../Component/Text"
-import Button from "../../Component/Forms/Button"
+import Container from "../../Component/Container";
+import { BigHeading, NormalText } from "../../Component/Text";
+import Button from "../../Component/Forms/Button";
 
-const Main = ({mainPic,title, text}) => {
+const Main = ({ mainPic, title, text }) => {
   return (
-    <Container className="!pb-24">
-        <div>
-            <div className="w-full relative">
-                <img src={mainPic} alt="" />
+    <Container className="pb-24 sm:pb-0 sm:px-0">
+      <div>
+        <div className="w-full relative">
+          <img src={mainPic} className="sm:h-[380px]" alt="" />
 
-                <div className="absolute top-0 w-full h-full flex flex-col justify-center items-center gap-6">
+          <div className="absolute top-0 w-full h-full flex flex-col justify-center items-center gap-6">
+            <BigHeading className={"text-white"} text={title} />
 
-                    <BigHeading className={'text-white'} text={title}/>
+            <NormalText
+              className={
+                "text-[18px] text-[#F9F9F9] w-[40%] sm:w-[90%] text-center"
+              }
+              text={text}
+            />
 
-                    <NormalText
-                        className={'!text-[18px] text-[#F9F9F9] w-[40%] text-center'}
-                        text={text}/>
-
-                    <Button 
-                        withIcon={true}
-                        className="!h-[52px] !w-[185px]"
-                        text={'Get started now'}
-                    />
-                </div>
-
-            </div>
+            <Button
+              withIcon={true}
+              className="!h-[52px] !w-[185px]"
+              text={"Get started now"}
+            />
+          </div>
         </div>
-
+      </div>
     </Container>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;
