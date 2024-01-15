@@ -1,9 +1,16 @@
 import MobileNavItem, { DropDownMobileNavItem } from "./MobileNavItem";
 import { LiaTimesSolid } from "react-icons/lia";
+import { motion } from "framer-motion";
 
 const MobileNav = ({ setToggleMenu }) => {
   return (
-    <div className="border-t-1 border-black bg-white z-50 fixed h-full top-16 w-full hidden sm:flex flex-col py-3 px-3">
+    <motion.div
+      initial={{ x: "-100%", opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x: "-100%", opacity: 0 }}
+      transition={{ ease: "easeInOut" }}
+      className="border-t-1 border-black bg-white z-50 fixed h-full top-16 w-full hidden sm:flex flex-col py-3 px-3"
+    >
       <LiaTimesSolid
         onClick={() => setToggleMenu(false)}
         size={24}
@@ -34,7 +41,7 @@ const MobileNav = ({ setToggleMenu }) => {
         <MobileNavItem text={"Pricing"} active={"/pricing"} />
         <MobileNavItem text={"Contact Us"} active={"/contact"} />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

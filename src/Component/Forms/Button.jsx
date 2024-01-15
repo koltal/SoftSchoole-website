@@ -15,7 +15,7 @@ const Button = ({
         <button
           onClick={onClick}
           className={cn(
-            "w-[78px] h-[38px] sm:text-[14px] flex justify-center gap-2 items-center bg-primary font-bold text-white rounded-md hover:opacity-50",
+            "w-[78px] h-[38px] sm:text-[14px] flex justify-center gap-2 items-center bg-primary font-bold text-white rounded-md hover:bg-[#32b2a9]",
             className
           )}
         >
@@ -26,7 +26,7 @@ const Button = ({
         <button
           onClick={onClick}
           className={cn(
-            "w-[78px] h-[38px] sm:text-[14px] flex justify-center gap-2 items-center border-1 font-bold border-primary text-black rounded-md hover:opacity-50",
+            "w-[78px] h-[38px] sm:text-[14px] flex justify-center gap-2 items-center border-1 font-bold border-primary text-black rounded-md hover:border-[#32b2a9]",
             className
           )}
         >

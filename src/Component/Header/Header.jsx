@@ -5,6 +5,7 @@ import { TbMenu2 } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import MobileNav from "../Nav/MobileNav/MobileNav";
 import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
 
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -35,8 +36,9 @@ const Header = () => {
         />
       </div>
       <div className="h-8 sm:hidden" />
-
-      {toggleMenu && <MobileNav setToggleMenu={setToggleMenu} />}
+      <AnimatePresence>
+        {toggleMenu && <MobileNav setToggleMenu={setToggleMenu} />}
+      </AnimatePresence>
     </div>
   );
 };

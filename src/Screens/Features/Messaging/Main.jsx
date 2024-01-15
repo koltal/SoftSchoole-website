@@ -1,6 +1,5 @@
 import Container from "../../../Component/Container";
 import mainPic from "../../../Assets/Features/messaging-main.png";
-import Button from "../../../Component/Forms/Button";
 import MainHeading from "../MainHeading";
 
 const Main = () => {
