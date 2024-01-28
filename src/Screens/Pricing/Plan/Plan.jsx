@@ -11,9 +11,9 @@ const Plan = () => {
 
           <div className="flex gap-8 sm:flex-col justify-center w-full">
             <Card
-              title={"Basic Plan"}
-              text={"6-20 users allowed (First 5 users free)"}
-              price={"$2.99"}
+              title={"Free Plan"}
+              text={"50 users allowed "}
+              price={"Free"}
               footer={"For small organizations"}
             />
 

@@ -20,12 +20,12 @@ const Header = () => {
         <Nav />
 
         <div className="flex gap-3 sm:hidden">
-          <Link to={"https://app.nitroserve.co"}>
-            <Button text="Log in" />
+          <Link to={"https://school-web-app-iota.vercel.app/"}>
+            <Button text="Enroll" />
           </Link>
 
           <Link to={"https://app.nitroserve.co/signup"}>
-            <Button text="Sign up" type="outline" />
+            <Button text="Log in" type="outline" />
           </Link>
         </div>
 

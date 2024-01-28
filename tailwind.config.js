@@ -33,7 +33,7 @@ module.exports = {
         13: "13px",
       },
       colors: {
-        primary: "#38C6BC",
+        primary: "#00315F",
         "primary-dark": "#2C9E96",
         "color-424": "#242424",
         "grey-600": "#A5A5A5",
@@ -92,7 +92,7 @@ module.exports = {
         0: "0px",
       },
       backgroundColor: {
-        primary: "#38C6BC",
+        primary: "#00315F",
         "main-bg": "#FAFBFB",
         "main-dark-bg": "#20232A",
         "secondary-dark-bg": "#33373E",

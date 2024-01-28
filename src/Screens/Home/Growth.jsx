@@ -11,28 +11,49 @@ const Growth = () => {
   return (
     <Container className="bg-[#F7FBFF] !py-14">
         <div className="flex flex-col gap-4 items-center">
-            <NormalHeading text={'Built for promoting growth'}/>
+            <NormalHeading text={'Benefits of Using SoftSchoole'}/>
 
             <p className="text-[16px] sm:text-[14px] w-[65%] sm:w-full text-gray-600 text-center">With the presence of our various tools to manage multiple  employees, efficiency and growth is assure using NitroServe </p>
 
             <div className="flex sm:flex-col w-full gap-16 sm:gap-12 mt-10 sm:mt-8">
                 <Card 
-                    title={'Multiple tools'}
+                    title={'Admission Process Simplified'}
                     text='NitroServe offers a comprehensive suite of tools designed to simplify your tasks and boost your productivity.'
                 />
 
                 <Card 
-                    title={'User friendly'}
+                    title={' Compiled Results with Ease'}
                     text='Our intuitive interface ensures effortless navigation for quick access to the right tool.'
                     icon={icon2}
                 />
 
 
                 <Card 
-                    title={'Support'}
+                    title={'Financial Autonomy'}
                     text='Providing support is crucial and it is made possible to ensure seamless experiences.'
                     icon={icon3}
                 />
+                
+            </div>
+            <div className="flex sm:flex-col w-full gap-16 sm:gap-12 mt-10 sm:mt-8">
+                <Card 
+                    title={'Admission Process Simplified'}
+                    text='NitroServe offers a comprehensive suite of tools designed to simplify your tasks and boost your productivity.'
+                />
+
+                <Card 
+                    title={' Compiled Results with Ease'}
+                    text='Our intuitive interface ensures effortless navigation for quick access to the right tool.'
+                    icon={icon2}
+                />
+
+
+                <Card 
+                    title={'Financial Autonomy'}
+                    text='Providing support is crucial and it is made possible to ensure seamless experiences.'
+                    icon={icon3}
+                />
+                
             </div>
         </div>
     </Container>

@@ -1,4 +1,4 @@
-import logo from '../Assets/nitroServeLogo.png'
+import logo from '../Assets/SoftSchooleNewLogo.png'
 
 const Logo = ({className}) => {
   return (
@@ -6,6 +6,7 @@ const Logo = ({className}) => {
       <img 
           src={logo} 
           alt="logo" 
+          className='h-[60px]'
       />
 
     </div>

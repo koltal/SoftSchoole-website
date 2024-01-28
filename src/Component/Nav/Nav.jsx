@@ -8,9 +8,9 @@ const Nav = () => {
     <div className="flex justify-between w-[33%] sm:hidden">
       <NavList
         list={[
-          { name: "Scheduling", link: "/features/scheduling" },
-          { name: "Messaging", link: "/features/messaging" },
-          { name: "Task Messaging", link: "/features/management" },
+          { name: "School Management", link: "/features/scheduling" },
+          { name: "Parent", link: "/features/messaging" },
+          { name: "Staff", link: "/features/management" },
         ]}
       >
         <NavItem list text="Features" active={"/features"} />

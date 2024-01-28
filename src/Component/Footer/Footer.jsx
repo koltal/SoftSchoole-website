@@ -14,7 +14,7 @@ const Footer = ({ withoutFooter }) => {
     <div className="flex flex-col gap-10">
       {!withoutFooter ? (
         <Container>
-          <div className="bg-[#38C6BC] h-[354px] sm:h-[155px] rounded-lg flex justify-between relative">
+          <div className="bg-primary h-[354px] sm:h-[155px] rounded-lg flex justify-between relative">
             <div className="flex items-end">
               <img className="sm:hidden" src={footerPic1} alt="" />
               <img
@@ -29,7 +29,7 @@ const Footer = ({ withoutFooter }) => {
                 className={
                   "text-[white] font-bold w-[40%] sm:w-full sm:!text-[16px] text-center"
                 }
-                text={"Sign up and get started on NitroServe"}
+                text={"Sign up and get started on Soft Schoole"}
               />
 
               <Button

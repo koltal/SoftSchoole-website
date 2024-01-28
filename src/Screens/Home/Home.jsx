@@ -11,8 +11,8 @@ const Home = () => {
    <Layout >
         <div>
             <Main/>
-            <Growth/>
             <Schedules/>
+            <Growth/>
             <Functions/>
             <Questions/>
         </div>
